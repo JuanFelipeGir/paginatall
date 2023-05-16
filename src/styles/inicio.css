@@ -1,0 +1,44 @@
+
+.top{
+    background-color: darkorchid;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.imagen_container {
+    display: flex;
+    align-items: center;
+    margin-inline: 10px;
+  }
+  .imagen_container img {
+    width: 22px;
+
+  }
+  
+  .imagen_container .imagen_texto {
+    
+    margin-left: 10px;
+  }
+.contac{
+  margin-left: 30%;
+  text-align: justify;
+}
+.imagen_container2 img {
+  max-width: 140%;
+  max-height: 140%;
+  margin-block: 10px;
+  cursor: pointer;
+  margin-inline: 5px;
+}
+.imagen_container2 {
+  display: flex;
+  align-items: center;
+}
+.search{
+  margin: auto;
+  margin-left: 5px;
+  border-radius: 15px;
+}
