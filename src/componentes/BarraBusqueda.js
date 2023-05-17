@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/BarraBusqueda.css"
 function BarraBusqueda() {
-  
+
   return (
  
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
