@@ -2,57 +2,34 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/inicio.css";
 import BarraBusqueda from './BarraBusqueda';
-import Uno from '../icons/Uno.jpg'
-import Facebook from '../icons/facebook.png'
+import Carrouseluno from '../icons/carrouseluno.jpg';
+import Carrouseldos from '../icons/carrouseldos.jpg';
+import Carrouseltres from '../icons/carrouseltres.jpg';
 
 
 function Inicio() {
   return (
-    <div>
-      <div>
-         <div className="imagen_container">
-          <img src={Uno} alt="Compras seguras" />
-          <p className="imagen_texto" style={{ color: "white" }}>
-            <strong>Compras seguras </strong>
-          </p>
-        </div>
-        <div className="imagen_container">
-          <img
-            src="icons\7.png"
-            alt="Pago contra entrega"
-          />
-          <p className="imagen_texto" style={{ color: "white" }}>
-            <strong> Pago Contra entrega </strong>
-          </p>
-        </div>
-        <div className="imagen_container">
-          <img
-            src="icons\6.png"
-            alt="Entregas el mismo día"
-          />
-          <p className="imagen_texto" style={{ color: "white" }}>
-            <strong> Entregas el mismo día</strong>
-          </p>
-        </div>
-        <p style={{ color: "white" }} className="contac">
-          <strong>Llámanos 1234567890</strong>
-        </p>
-        <div className="imagen_container2">
-          <img src="icons\8.png" alt="Youtube" />
-          <img src={Facebook} alt="Facebook" />
-          <img src="icons\5.png" alt="Instagram" />
-        </div>
-        <div className="search">
-          <form action="#">
-            <input type="text" placeholder="Busca el producto" name="search" />
-            <button>
-              <i className="fa fa-search" style={{ fontSize: "18px" }} />
-            </button>
-          </form>
-        </div>
-        
-      </div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={Carrouseluno} class="d-block w-100" alt="..."></img>
     </div>
+    <div class="carousel-item">
+      <img src={Carrouseldos} class="d-block w-100" alt="..."></img>
+    </div>
+    <div class="carousel-item">
+      <img src={Carrouseltres} class="d-block w-100" alt="..."></img>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   );
 }
 
